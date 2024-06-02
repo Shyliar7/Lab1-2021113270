@@ -39,7 +39,7 @@ def generate_graph(text):
         word1 = words[i]  
         word2 = words[i + 1]  
         # 更新边权重  
-        edge_weights[(word1, word2)] += 1  
+        edge_weights[(word1, word2)] += 1 
           
         # 如果还没有这条边，添加到图中  
         if not G.has_edge(word1, word2):  
