@@ -34,7 +34,7 @@ def generate_graph(text):
     # 使用空格分割单词 
     words = text.split(' ') 
 
-    # 遍历单词列表，计算相邻词对的权重  
+    # 遍历单词列表，计算相邻词对的权重   
     for i in range(len(words) - 1):  
         word1 = words[i]  
         word2 = words[i + 1]  
