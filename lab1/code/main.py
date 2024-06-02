@@ -83,6 +83,7 @@ def show_graph(G):
 def query_bridge_words(G, word1, word2):  
    
     bridge_words = []
+    
     # 遍历所有节点，检查是否存在桥接词
     for node in G.nodes():
         if word1 in G.predecessors(node) and word2 in G.successors(node):
